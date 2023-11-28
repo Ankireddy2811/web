@@ -1,14 +1,18 @@
+import {BrowserRouter} from 'react-router-dom'
 import logo from './logo.svg';
-import './App.css';
-import Topbar from './components/Navbar';
-import Header from './components/Header';
+import Home from './components/Home';
 
-function App() {
+import './App.css';
+
+const App = ()=>{
   return (
     <>
-    <div className='contianer'>
-        <Header/>
+    <BrowserRouter>
+    <div className='app-contianer'>
+        <Home/>
     </div>
+    </BrowserRouter>
+    
     </>
   );
 }
