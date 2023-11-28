@@ -1,0 +1,321 @@
+{
+    "diseasesCategories": [
+      {
+        "name": "Cardiology",
+        "doctors": [
+          {
+            "id": 1,
+            "name": "Dr. John Smith",
+            "specialization": "Cardiology",
+            "appointment_fees": 500,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Medical School XYZ",
+                "year": 2005
+              },
+              {
+                "degree": "Cardiology Fellowship",
+                "institution": "Cardiology Institute ABC",
+                "year": 2010
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "HeartCare Hospital",
+              "registration_number": "H12345",
+              "about": "HeartCare Hospital is a leading cardiac care center.",
+              "timing": {
+                "days": ["Monday", "Wednesday", "Friday"],
+                "online": "10:00 AM - 1:00 PM",
+                "clinic": "2:00 PM - 5:00 PM"
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "name": "Neurology",
+        "doctors": [
+          {
+            "id": 2,
+            "name": "Dr. Sarah Johnson",
+            "specialization": "Neurology",
+            "appointment_fees": 500,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Medical School ABC",
+                "year": 2008
+              },
+              {
+                "degree": "Neurology Residency",
+                "institution": "Neuro Institute XYZ",
+                "year": 2013
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "Brain Health Center",
+              "registration_number": "N67890",
+              "about": "Brain Health Center specializes in neurological care.",
+              "timing": {
+                "days": ["Tuesday", "Thursday", "Saturday"],
+                "online": "9:00 AM - 12:00 PM",
+                "clinic": "1:00 PM - 4:00 PM"
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "name": "Dermatology",
+        "doctors": [
+          {
+            "id": 3,
+            "name": "Dr. Emily Brown",
+            "specialization": "Dermatology",
+            "appointment_fees": 600,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Dermatology School XYZ",
+                "year": 2007
+              },
+              {
+                "degree": "Dermatology Residency",
+                "institution": "Skin Institute ABC",
+                "year": 2012
+              }
+            ],
+            "language": "English, Spanish",
+            "location": {
+              "hospital_name": "SkinCare Clinic",
+              "registration_number": "D34567",
+              "about": "SkinCare Clinic provides comprehensive dermatological services.",
+              "timing": {
+                "days": ["Monday", "Wednesday", "Friday"],
+                "online": "11:00 AM - 2:00 PM",
+                "clinic": "3:00 PM - 6:00 PM"
+              }
+            }
+          }
+          
+        ]
+      },
+      {
+        "name": "Orthopedics",
+        "doctors": [
+          {
+            "id": 4,
+            "name": "Dr. Michael Davis",
+            "specialization": "Orthopedics",
+            "appointment_fees": 550,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Ortho School XYZ",
+                "year": 2006
+              },
+              {
+                "degree": "Orthopedics Residency",
+                "institution": "Ortho Institute ABC",
+                "year": 2011
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "OrthoCare Hospital",
+              "registration_number": "O98765",
+              "about": "OrthoCare Hospital specializes in orthopedic and musculoskeletal care.",
+              "timing": {
+                "days": ["Tuesday", "Thursday", "Saturday"],
+                "online": "10:00 AM - 1:00 PM",
+                "clinic": "2:00 PM - 5:00 PM"
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "name": "Gastroenterology",
+        "doctors": [
+          {
+            "id": 5,
+            "name": "Dr. Jessica Miller",
+            "specialization": "Gastroenterology",
+            "appointment_fees": 550,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Gastro School XYZ",
+                "year": 2009
+              },
+              {
+                "degree": "Gastroenterology Fellowship",
+                "institution": "Gastro Institute ABC",
+                "year": 2014
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "GastroCare Center",
+              "registration_number": "G23456",
+              "about": "GastroCare Center provides expert gastrointestinal care.",
+              "timing": {
+                "days": ["Monday", "Wednesday", "Friday"],
+                "online": "9:00 AM - 12:00 PM",
+                "clinic": "1:00 PM - 4:00 PM"
+              }
+            }
+          }
+          
+        ]
+      },
+      {
+        "name": "Ophthalmology",
+        "doctors": [
+          {
+            "id": 6,
+            "name": "Dr. Andrew Taylor",
+            "specialization": "Ophthalmology",
+            "appointment_fees": 600,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Eye School XYZ",
+                "year": 2007
+              },
+              {
+                "degree": "Ophthalmology Residency",
+                "institution": "Eye Institute ABC",
+                "year": 2012
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "EyeCare Clinic",
+              "registration_number": "E45678",
+              "about": "EyeCare Clinic offers comprehensive eye care services.",
+              "timing": {
+                "days": ["Tuesday", "Thursday", "Saturday"],
+                "online": "11:00 AM - 2:00 PM",
+                "clinic": "3:00 PM - 6:00 PM"
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "name": "Pediatrics",
+        "doctors": [
+          {
+            "id": 7,
+            "name": "Dr. Olivia Wilson",
+            "specialization": "Pediatrics",
+            "appointment_fees": 450,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Pediatric School XYZ",
+                "year": 2010
+              },
+              {
+                "degree": "Pediatrics Residency",
+                "institution": "Pediatric Institute ABC",
+                "year": 2015
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "KidsHealth Clinic",
+              "registration_number": "P78901",
+              "about": "KidsHealth Clinic is dedicated to children's health and well-being.",
+              "timing": {
+                "days": ["Monday", "Wednesday", "Friday"],
+                "online": "10:00 AM - 1:00 PM",
+                "clinic": "2:00 PM - 5:00 PM"
+              }
+            }
+          }
+
+        ]
+      },
+      {
+        "name": "Obstetrics and Gynecology",
+        "doctors": [
+          {
+            "id": 8,
+            "name": "Dr. Sophia Adams",
+            "specialization": "Obstetrics and Gynecology",
+            "appointment_fees": 550,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "ObGyn School XYZ",
+                "year": 2008
+              },
+              {
+                "degree": "Obstetrics and Gynecology Residency",
+                "institution": "ObGyn Institute ABC",
+                "year": 2013
+              }
+            ],
+            "language": "English, Spanish",
+            "location": {
+              "hospital_name": "Women's Health Center",
+              "registration_number": "OG12345",
+              "about": "Women's Health Center provides comprehensive women's healthcare services.",
+              "timing": {
+                "days": ["Tuesday", "Thursday", "Saturday"],
+                "online": "9:00 AM - 12:00 PM",
+                "clinic": "1:00 PM - 4:00 PM"
+              }
+            }
+          }
+          
+        ]
+      },
+      {
+        "name": "Internal Medicine",
+        "doctors": [
+          {
+            "id": 9,
+            "name": "Dr. Robert Turner",
+            "specialization": "Internal Medicine",
+            "appointment_fees": 500,
+            "education": [
+              {
+                "degree": "Doctor of Medicine (MD)",
+                "institution": "Internal Medicine School XYZ",
+                "year": 2006
+              },
+              {
+                "degree": "Internal Medicine Residency",
+                "institution": "Internal Medicine Institute ABC",
+                "year": 2011
+              }
+            ],
+            "language": "English",
+            "location": {
+              "hospital_name": "HealthCare Clinic",
+              "registration_number": "IM56789",
+              "about": "HealthCare Clinic focuses on comprehensive internal medicine services.",
+              "timing": {
+                "days": ["Monday", "Wednesday", "Friday"],
+                "online": "10:00 AM - 1:00 PM",
+                "clinic": "2:00 PM - 5:00 PM"
+              }
+            }
+          }
+          
+        ]
+      }
+  
+    ]
+  }
+  
