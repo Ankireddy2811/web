@@ -1,9 +1,15 @@
 import React from 'react'
+import Spinner from '../Spinner'
+
+
 
 const DiseasesCard = () => {
   return (
     <>
-    <div>DiseasesCard</div>
+    <div>
+      DiseasesCard
+      <Spinner/>
+    </div>
     </>
   )
 }

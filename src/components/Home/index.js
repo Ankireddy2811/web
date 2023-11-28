@@ -1,9 +1,14 @@
 import React from 'react'
+import DiseasesCard from '../Cards/DiseasesCard'
 
-const index = () => {
+const Home = () => {
   return (
-    <div>index</div>
+    <>
+    <div className='container'>
+      <DiseasesCard/>
+    </div>
+    </>
   )
 }
 
-export default index
+export default Home
