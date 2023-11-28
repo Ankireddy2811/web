@@ -1,26 +1,9 @@
-import {Link} from "react-router-dom";
-import Header from '../Header'
-import banner from "../../assets/img/Doctor banner.jpg"
-import './index.css'
+import React from 'react'
 
-const Home = () => {
-    return (
-    <>
-     <Header />
-     <div className="home-container">
-        <div className="header-content">
-      
-        </div>
-          
-      </div>
-    </>
+const index = () => {
+  return (
+    <div>index</div>
   )
 }
 
-
-
-export default Home
-
-
-
-
+export default index

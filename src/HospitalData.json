@@ -1,0 +1,585 @@
+{
+  "hospitals": [
+    {
+      "hospital_id": 1,
+      "hospital_name": "City General Hospital",
+      "owner_name": "Dr. Johnson",
+      "profile_image": "city_general_profile.jpg",
+      "logo_image": "city_general_logo.png",
+      "city_address": "Cityville",
+      "email": "citygeneral@example.com",
+      "phone": "123-456-7890",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 101,
+              "first_name": "Dr. Smith",
+              "last_name": "Johnson",
+              "profile_image": "doctor_smith_profile.jpg",
+              "email": "drsmith@example.com",
+              "contact": "987-654-3210",
+              "specialty": "Cardiology",
+              "qualification": "MD, Cardiology",
+              "address": "123 Cardiac Lane, Cityville",
+              "department_name": "Cardiology",
+              "client_id": 1,
+              "gender": "Male",
+              "date_of_birth": "1975-05-15"
+            },
+            {
+              "doctor_id": 102,
+              "first_name": "Dr. White",
+              "last_name": "Brown",
+              "profile_image": "doctor_white_profile.jpg",
+              "email": "drwhite@example.com",
+              "contact": "876-543-2109",
+              "specialty": "Pediatrics",
+              "qualification": "MD, Pediatrics",
+              "address": "456 Kids Avenue, Countryside",
+              "department_name": "Pediatrics",
+              "client_id": 1,
+              "gender": "Female",
+              "date_of_birth": "1980-08-20"
+            },
+            {
+              "doctor_id": 103,
+              "first_name": "Dr. Taylor",
+              "last_name": "Clark",
+              "profile_image": "doctor_taylor_profile.jpg",
+              "email": "drtaylor@example.com",
+              "contact": "765-432-1098",
+              "specialty": "Dermatology",
+              "qualification": "MD, Dermatology",
+              "address": "789 Skin Street, Skintown",
+              "department_name": "Dermatology",
+              "client_id": 1,
+              "gender": "Female",
+              "date_of_birth": "1985-11-25"
+            },
+            {
+              "doctor_id": 104,
+              "first_name": "Dr. James",
+              "last_name": "Miller",
+              "profile_image": "doctor_james_profile.jpg",
+              "email": "drjames@example.com",
+              "contact": "654-321-0987",
+              "specialty": "Orthopedics",
+              "qualification": "MD, Orthopedics",
+              "address": "456 Bone Street, Boneville",
+              "department_name": "Orthopedics",
+              "client_id": 1,
+              "gender": "Male",
+              "date_of_birth": "1978-09-18"
+            },
+            {
+              "doctor_id": 105,
+              "first_name": "Dr. Emma",
+              "last_name": "Williams",
+              "profile_image": "doctor_emma_profile.jpg",
+              "email": "dremma@example.com",
+              "contact": "987-654-3211",
+              "specialty": "Obstetrics and Gynecology",
+              "qualification": "MD, Obstetrics and Gynecology",
+              "address": "789 Women's Health Street, Gynecotown",
+              "department_name": "Obstetrics and Gynecology",
+              "client_id": 1,
+              "gender": "Female",
+              "date_of_birth": "1982-04-30"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 2,
+      "hospital_name": "Rural Health Center",
+      "owner_name": "Dr. Brown",
+      "profile_image": "rural_health_profile.jpg",
+      "logo_image": "rural_health_logo.png",
+      "city_address": "Countryside",
+      "email": "ruralhealth@example.com",
+      "phone": "234-567-8901",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 201,
+              "first_name": "Dr. White",
+              "last_name": "Brown",
+              "profile_image": "doctor_white_profile.jpg",
+              "email": "drwhite@example.com",
+              "contact": "876-543-2109",
+              "specialty": "Pediatrics",
+              "qualification": "MD, Pediatrics",
+              "address": "456 Kids Avenue, Countryside",
+              "department_name": "Pediatrics",
+              "client_id": 2,
+              "gender": "Female",
+              "date_of_birth": "1980-08-20"
+            },
+            {
+              "doctor_id": 202,
+              "first_name": "Dr. Benjamin",
+              "last_name": "Davis",
+              "profile_image": "doctor_benjamin_profile.jpg",
+              "email": "drbenjamin@example.com",
+              "contact": "876-543-2110",
+              "specialty": "Neurology",
+              "qualification": "MD, Neurology",
+              "address": "123 Brain Lane, Neurontown",
+              "department_name": "Neurology",
+              "client_id": 2,
+              "gender": "Male",
+              "date_of_birth": "1984-07-12"
+            },
+            {
+              "doctor_id": 203,
+              "first_name": "Dr. Olivia",
+              "last_name": "Jones",
+              "profile_image": "doctor_olivia_profile.jpg",
+              "email": "drolivia@example.com",
+              "contact": "765-432-1099",
+              "specialty": "Ophthalmology",
+              "qualification": "MD, Ophthalmology",
+              "address": "456 Eye Street, Eyeville",
+              "department_name": "Ophthalmology",
+              "client_id": 2,
+              "gender": "Female",
+              "date_of_birth": "1976-12-05"
+            },
+            {
+              "doctor_id": 204,
+              "first_name": "Dr. Michael",
+              "last_name": "Brown",
+              "profile_image": "doctor_michael_profile.jpg",
+              "email": "drmichael@example.com",
+              "contact": "654-321-0988",
+              "specialty": "Emergency Medicine",
+              "qualification": "MD, Emergency Medicine",
+              "address": "123 Emergency Lane, Urgentville",
+              "department_name": "Emergency Medicine",
+              "client_id": 2,
+              "gender": "Male",
+              "date_of_birth": "1979-03-22"
+            },
+            {
+              "doctor_id": 205,
+              "first_name": "Dr. Lily",
+              "last_name": "Harris",
+              "profile_image": "doctor_lily_profile.jpg",
+              "email": "drlily@example.com",
+              "contact": "987-654-3212",
+              "specialty": "Psychiatry",
+              "qualification": "MD, Psychiatry",
+              "address": "789 Mind Street, Psychotown",
+              "department_name": "Psychiatry",
+              "client_id": 2,
+              "gender": "Female",
+              "date_of_birth": "1981-10-15"
+            },
+            {
+              "doctor_id": 206,
+              "first_name": "Dr. Oliver",
+              "last_name": "Anderson",
+              "profile_image": "doctor_oliver_profile.jpg",
+              "email": "droliver@example.com",
+              "contact": "876-543-2111",
+              "specialty": "Internal Medicine",
+              "qualification": "MD, Internal Medicine",
+              "address": "123 Internal Lane, Innercity",
+              "department_name": "Internal Medicine",
+              "client_id": 2,
+              "gender": "Male",
+              "date_of_birth": "1983-06-28"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 3,
+      "hospital_name": "Metropolitan Medical Center",
+      "owner_name": "Dr. Anderson",
+      "profile_image": "metropolitan_profile.jpg",
+      "logo_image": "metropolitan_logo.png",
+      "city_address": "Metropolis",
+      "email": "metromed@example.com",
+      "phone": "345-678-9012",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 311,
+              "first_name": "Dr. Sophia",
+              "last_name": "Walker",
+              "profile_image": "doctor_sophia_profile.jpg",
+              "email": "drsophia@example.com",
+              "contact": "765-432-1100",
+              "specialty": "Urology",
+              "qualification": "MD, Urology",
+              "address": "456 Bladder Street, Urotown",
+              "department_name": "Urology",
+              "client_id": 3,
+              "gender": "Female",
+              "date_of_birth": "1977"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 4,
+      "hospital_name": "Suburban General Hospital",
+      "owner_name": "Dr. Davis",
+      "profile_image": "suburban_profile.jpg",
+      "logo_image": "suburban_logo.png",
+      "city_address": "Suburbia",
+      "email": "suburbangeneral@example.com",
+      "phone": "456-789-0123",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 411,
+              "first_name": "Dr. Sophia",
+              "last_name": "Walker",
+              "profile_image": "doctor_sophia_profile.jpg",
+              "email": "drsophia@example.com",
+              "contact": "765-432-1100",
+              "specialty": "Urology",
+              "qualification": "MD, Urology",
+              "address": "456 Bladder Street, Urotown",
+              "department_name": "Urology",
+              "client_id": 4,
+              "gender": "Female",
+              "date_of_birth": "1977"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 5,
+      "hospital_name": "Coastal Community Hospital",
+      "owner_name": "Dr. Carter",
+      "profile_image": "coastal_profile.jpg",
+      "logo_image": "coastal_logo.png",
+      "city_address": "Coast City",
+      "email": "coastalcommunity@example.com",
+      "phone": "567-890-1234",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 511,
+              "first_name": "Dr. Sophia",
+              "last_name": "Walker",
+              "profile_image": "doctor_sophia_profile.jpg",
+              "email": "drsophia@example.com",
+              "contact": "765-432-1100",
+              "specialty": "Urology",
+              "qualification": "MD, Urology",
+              "address": "456 Bladder Street, Urotown",
+              "department_name": "Urology",
+              "client_id": 5,
+              "gender": "Female",
+              "date_of_birth": "1977"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 6,
+      "hospital_name": "Hillside Medical Center",
+      "owner_name": "Dr. Hill",
+      "profile_image": "hillside_profile.jpg",
+      "logo_image": "hillside_logo.png",
+      "city_address": "Hilltop",
+      "email": "hillside@example.com",
+      "phone": "678-901-2345",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 601,
+              "first_name": "Dr. White",
+              "last_name": "Brown",
+              "profile_image": "doctor_white_profile.jpg",
+              "email": "drwhite@example.com",
+              "contact": "876-543-2109",
+              "specialty": "Pediatrics",
+              "qualification": "MD, Pediatrics",
+              "address": "456 Kids Avenue, Countryside",
+              "department_name": "Pediatrics",
+              "client_id": 6,
+              "gender": "Female",
+              "date_of_birth": "1980-08-20"
+            },
+            {
+              "doctor_id": 602,
+              "first_name": "Dr. Benjamin",
+              "last_name": "Davis",
+              "profile_image": "doctor_benjamin_profile.jpg",
+              "email": "drbenjamin@example.com",
+              "contact": "876-543-2110",
+              "specialty": "Neurology",
+              "qualification": "MD, Neurology",
+              "address": "123 Brain Lane, Neurontown",
+              "department_name": "Neurology",
+              "client_id": 6,
+              "gender": "Male",
+              "date_of_birth": "1984-07-12"
+            },
+            {
+              "doctor_id": 603,
+              "first_name": "Dr. Olivia",
+              "last_name": "Jones",
+              "profile_image": "doctor_olivia_profile.jpg",
+              "email": "drolivia@example.com",
+              "contact": "765-432-1099",
+              "specialty": "Ophthalmology",
+              "qualification": "MD, Ophthalmology",
+              "address": "456 Eye Street, Eyeville",
+              "department_name": "Ophthalmology",
+              "client_id": 6,
+              "gender": "Female",
+              "date_of_birth": "1976-12-05"
+            },
+            {
+              "doctor_id": 604,
+              "first_name": "Dr. Michael",
+              "last_name": "Brown",
+              "profile_image": "doctor_michael_profile.jpg",
+              "email": "drmichael@example.com",
+              "contact": "654-321-0988",
+              "specialty": "Emergency Medicine",
+              "qualification": "MD, Emergency Medicine",
+              "address": "123 Emergency Lane, Urgentville",
+              "department_name": "Emergency Medicine",
+              "client_id": 6,
+              "gender": "Male",
+              "date_of_birth": "1979-03-22"
+            },
+            {
+              "doctor_id": 205,
+              "first_name": "Dr. Lily",
+              "last_name": "Harris",
+              "profile_image": "doctor_lily_profile.jpg",
+              "email": "drlily@example.com",
+              "contact": "987-654-3212",
+              "specialty": "Psychiatry",
+              "qualification": "MD, Psychiatry",
+              "address": "789 Mind Street, Psychotown",
+              "department_name": "Psychiatry",
+              "client_id": 6,
+              "gender": "Female",
+              "date_of_birth": "1981-10-15"
+            },
+            {
+              "doctor_id": 606,
+              "first_name": "Dr. Oliver",
+              "last_name": "Anderson",
+              "profile_image": "doctor_oliver_profile.jpg",
+              "email": "droliver@example.com",
+              "contact": "876-543-2111",
+              "specialty": "Internal Medicine",
+              "qualification": "MD, Internal Medicine",
+              "address": "123 Internal Lane, Innercity",
+              "department_name": "Internal Medicine",
+              "client_id": 6,
+              "gender": "Male",
+              "date_of_birth": "1983-06-28"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 7,
+      "hospital_name": "Sunset General Hospital",
+      "owner_name": "Dr. Sunset",
+      "profile_image": "sunset_profile.jpg",
+      "logo_image": "sunset_logo.png",
+      "city_address": "Sunset City",
+      "email": "sunsetgeneral@example.com",
+      "phone": "789-012-3456",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 701,
+              "first_name": "Dr. White",
+              "last_name": "Brown",
+              "profile_image": "doctor_white_profile.jpg",
+              "email": "drwhite@example.com",
+              "contact": "876-543-2109",
+              "specialty": "Pediatrics",
+              "qualification": "MD, Pediatrics",
+              "address": "456 Kids Avenue, Countryside",
+              "department_name": "Pediatrics",
+              "client_id": 7,
+              "gender": "Female",
+              "date_of_birth": "1980-08-20"
+            },
+            {
+              "doctor_id": 702,
+              "first_name": "Dr. Benjamin",
+              "last_name": "Davis",
+              "profile_image": "doctor_benjamin_profile.jpg",
+              "email": "drbenjamin@example.com",
+              "contact": "876-543-2110",
+              "specialty": "Neurology",
+              "qualification": "MD, Neurology",
+              "address": "123 Brain Lane, Neurontown",
+              "department_name": "Neurology",
+              "client_id": 7,
+              "gender": "Male",
+              "date_of_birth": "1984-07-12"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 8,
+      "hospital_name": "Green Valley Medical Center",
+      "owner_name": "Dr. Green",
+      "profile_image": "greenvalley_profile.jpg",
+      "logo_image": "greenvalley_logo.png",
+      "city_address": "Greenville",
+      "email": "greenvalley@example.com",
+      "phone": "890-123-4567",
+      "Alldoctors": [
+        {
+          "doctors": [
+            {
+              "doctor_id": 803,
+              "first_name": "Dr. Olivia",
+              "last_name": "Jones",
+              "profile_image": "doctor_olivia_profile.jpg",
+              "email": "drolivia@example.com",
+              "contact": "765-432-1099",
+              "specialty": "Ophthalmology",
+              "qualification": "MD, Ophthalmology",
+              "address": "456 Eye Street, Eyeville",
+              "department_name": "Ophthalmology",
+              "client_id": 8,
+              "gender": "Female",
+              "date_of_birth": "1976-12-05"
+            },
+            {
+              "doctor_id": 804,
+              "first_name": "Dr. Michael",
+              "last_name": "Brown",
+              "profile_image": "doctor_michael_profile.jpg",
+              "email": "drmichael@example.com",
+              "contact": "654-321-0988",
+              "specialty": "Emergency Medicine",
+              "qualification": "MD, Emergency Medicine",
+              "address": "123 Emergency Lane, Urgentville",
+              "department_name": "Emergency Medicine",
+              "client_id": 8,
+              "gender": "Male",
+              "date_of_birth": "1979-03-22"
+            },
+            {
+              "doctor_id": 805,
+              "first_name": "Dr. Lily",
+              "last_name": "Harris",
+              "profile_image": "doctor_lily_profile.jpg",
+              "email": "drlily@example.com",
+              "contact": "987-654-3212",
+              "specialty": "Psychiatry",
+              "qualification": "MD, Psychiatry",
+              "address": "789 Mind Street, Psychotown",
+              "department_name": "Psychiatry",
+              "client_id": 8,
+              "gender": "Female",
+              "date_of_birth": "1981-10-15"
+            },
+            {
+              "doctor_id": 806,
+              "first_name": "Dr. Oliver",
+              "last_name": "Anderson",
+              "profile_image": "doctor_oliver_profile.jpg",
+              "email": "droliver@example.com",
+              "contact": "876-543-2111",
+              "specialty": "Internal Medicine",
+              "qualification": "MD, Internal Medicine",
+              "address": "123 Internal Lane, Innercity",
+              "department_name": "Internal Medicine",
+              "client_id": 8,
+              "gender": "Male",
+              "date_of_birth": "1983-06-28"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 9,
+      "hospital_name": "Silverlake Health Hub",
+      "owner_name": "Dr. Silver",
+      "profile_image": "silverlake_profile.jpg",
+      "logo_image": "silverlake_logo.png",
+      "city_address": "Silver City",
+      "email": "silverlake@example.com",
+      "phone": "901-234-5678",
+      "Alldoctors": [
+        {
+          "doctor_id": 906,
+          "first_name": "Dr. Oliver",
+          "last_name": "Anderson",
+          "profile_image": "doctor_oliver_profile.jpg",
+          "email": "droliver@example.com",
+          "contact": "876-543-2111",
+          "specialty": "Internal Medicine",
+          "qualification": "MD, Internal Medicine",
+          "address": "123 Internal Lane, Innercity",
+          "department_name": "Internal Medicine",
+          "client_id": 9,
+          "gender": "Male",
+          "date_of_birth": "1983-06-28"
+        }
+      ]
+    },
+
+    {
+      "hospital_id": 10,
+      "hospital_name": "Central Community Clinic",
+      "owner_name": "Dr. Central",
+      "profile_image": "central_profile.jpg",
+      "logo_image": "central_logo.png",
+      "city_address": "Central Town",
+      "email": "centralclinic@example.com",
+      "phone": "012-345-6789",
+      "Alldoctors": [
+        {
+          "doctor_id": 1006,
+          "first_name": "Dr. Oliver",
+          "last_name": "Anderson",
+          "profile_image": "doctor_oliver_profile.jpg",
+          "email": "droliver@example.com",
+          "contact": "876-543-2111",
+          "specialty": "Internal Medicine",
+          "qualification": "MD, Internal Medicine",
+          "address": "123 Internal Lane, Innercity",
+          "department_name": "Internal Medicine",
+          "client_id": 10,
+          "gender": "Male",
+          "date_of_birth": "1983-06-28"
+        }
+      ]
+    }
+  ]
+}

@@ -3,16 +3,16 @@ import logo from './logo.svg';
 import Home from './components/Home';
 
 import './App.css';
+import Header from './components/Header';
 
 const App = ()=>{
   return (
     <>
     <BrowserRouter>
     <div className='app-contianer'>
-        <Home/>
+        <Header/>
     </div>
     </BrowserRouter>
-    
     </>
   );
 }
