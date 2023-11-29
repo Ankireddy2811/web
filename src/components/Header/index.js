@@ -8,11 +8,14 @@ const Header = () => {
   return (
     <>
      <section>
-        <div id="navbar">
+        <div className="">
           <div id="header-image">
-            <div className="hero-text">
+            <div className="container container-sm">
+              <div className="logo-text">
               <img src={Logo} alt="" width="200" />
             </div>
+            </div>
+            
           </div>
         </div>
       </section>
