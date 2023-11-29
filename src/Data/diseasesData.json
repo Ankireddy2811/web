@@ -2,6 +2,7 @@
     "diseasesCategories": [
       {
         "name": "Cardiology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/2738/2738782.png?uid=R96020447&ga=GA1.1.1515422519.1694859542",
         "doctors": [
           {
             "id": 1,
@@ -37,6 +38,7 @@
       },
       {
         "name": "Neurology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/2491/2491314.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 2,
@@ -72,6 +74,7 @@
       },
       {
         "name": "Dermatology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/3464/3464691.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 3,
@@ -107,6 +110,7 @@
       },
       {
         "name": "Orthopedics",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/9013/9013016.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 4,
@@ -142,6 +146,7 @@
       },
       {
         "name": "Gastroenterology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/10207/10207785.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 5,
@@ -177,6 +182,7 @@
       },
       {
         "name": "Ophthalmology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/4025/4025275.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 6,
@@ -212,6 +218,7 @@
       },
       {
         "name": "Pediatrics",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/1726/1726161.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 7,
@@ -246,7 +253,8 @@
         ]
       },
       {
-        "name": "Obstetrics and Gynecology",
+        "name": "Obs & Gynecology",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/5641/5641475.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 8,
@@ -282,6 +290,7 @@
       },
       {
         "name": "Internal Medicine",
+        "imageUrl":"https://cdn-icons-png.flaticon.com/128/10640/10640368.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais",
         "doctors": [
           {
             "id": 9,

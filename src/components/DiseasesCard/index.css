@@ -1,0 +1,19 @@
+.diseases-container{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.doctor-image{
+    width: 50%;
+    height: 10vh;
+}
+
+.diseases-text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    color: royalblue;
+}

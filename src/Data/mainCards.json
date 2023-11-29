@@ -1,0 +1,28 @@
+{
+    "cardsList":[
+        {
+            "name":"Book Appointment",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/3663/3663781.png?uid=R96020447&ga=GA1.1.1515422519.1694859542"
+        },
+        {
+            "name":"Book Health Check-up",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/6946/6946847.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais"
+        },
+        {
+            "name":"Consult Online",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/4823/4823531.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais"
+        },
+        {
+            "name":"Buy Medicine",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/1047/1047671.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais"
+        },
+        {
+            "name":"Find Hospital",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/2959/2959922.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais"
+        },
+        {
+            "name":"View Health Record",
+            "imageUrl":"https://cdn-icons-png.flaticon.com/128/2854/2854834.png?uid=R96020447&ga=GA1.1.1515422519.1694859542&semt=ais"
+        }
+    ]
+}

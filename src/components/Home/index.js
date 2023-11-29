@@ -1,5 +1,5 @@
 import React from 'react'
-import DiseasesCard from '../Cards/DiseasesCard'
+import DiseasesCard from '../DiseasesCard'
 
 const Home = () => {
   return (
