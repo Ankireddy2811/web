@@ -5,6 +5,7 @@ import Doctors from "./components/Doctors";
 import Header from "./components/Header";
 import TopLists from "./components/TopLists";
 import DiseasesCard from "./components/DiseasesCard";
+import AppointmentForm from "./components/AppointmentForm";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <div className="container">
             <Home />
             <DiseasesCard />
+            {/* <AppointmentForm/> */}
           </div>
         </div>
       </BrowserRouter>
