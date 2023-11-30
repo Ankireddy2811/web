@@ -7,20 +7,19 @@ import Logo from "../../assets/img/Orionqo 2.png";
 const Header = () => {
   return (
     <>
-     <section>
+      <section>
         <div className="">
           <div id="header-image">
             <div className="container">
               <div className="logo-text">
-              <img src={Logo} alt="" width="200" />
+                <img src={Logo} alt="" width="200" />
+              </div>
             </div>
-            </div>
-            
           </div>
         </div>
       </section>
-      
-    {/* <section>
+
+      {/* <section>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid justify-space-between">
           <span classNameName="navbar-brand">

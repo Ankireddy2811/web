@@ -14,7 +14,7 @@ const App = () => {
           <Header />
           <TopLists />
           <div className="container">
-            <Home/>
+            <Home />
             <DiseasesCard />
           </div>
         </div>
