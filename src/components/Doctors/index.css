@@ -1,0 +1,130 @@
+/* Doctors.css */
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .custom-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-search-input {
+    width: 200px;
+  }
+  
+  .custom-search-icon {
+    /* Add styles for the search icon if needed */
+  }
+  
+  .custom-doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .custom-no-data {
+    /* Add styles for the no data message if needed */
+  }
+  
+  .custom-doctor-card {
+    margin-top: 10px;
+    display: flex;
+    box-shadow: 6px 6px 70px rgb(16 40 81 / 23%);
+    padding: 20px 10px;
+    margin:10px;
+    width: 45%;
+    max-height:100vh;
+    border-radius: 15px;
+  }
+
+  .experience-container{
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .custom-doctor-image {
+    padding: 15px;
+    width: 25%;
+    height: 20vh;
+  }
+  
+  .custom-doctor-details {
+    padding: 15px;
+    width: 75%;
+  }
+  
+  .custom-doctor-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .custom-doctor-experience{
+    color: #7a7f89;
+    font-size: 15px;
+    margin: 3px;
+  }
+  
+
+  .custom-doctor-hospital {
+    font-size: 1em;
+    color: #ea4335;
+  }
+  
+  .custom-doctor-specialty {
+    font-size: 1em;
+    font-style: italic;
+    color: #795548;
+  }
+  
+  .custom-doctor-buttons {
+    display: flex;
+    margin-top: 10px;
+  }
+  .both-buttons{
+   
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .profile-button {
+    border-color: #3498db;
+    background: linear-gradient(to bottom right, #3498db, #2980b9);
+    margin-right: 10px;
+   }
+
+ .appointment-button{
+
+    border-color: #007C9D;
+    background: linear-gradient(to bottom right,#007291,#07394a);
+ }
+  
+@media (max-width:768px){
+  .custom-doctor-card{
+     width: 100%;
+  }
+  .custom-doctor-image {
+    width: 35%;
+    height: 20vh;
+  }
+  .custom-doctor-experience{
+    font-size: 12px;
+  }
+  .both-buttons{
+    padding: 6px;
+    font-size: 10px;
+  }
+  .custom-doctor-hospital{
+    font-size: 13px;
+  }
+  .custom-doctor-title{
+    font-size: 18px;
+  }
+ 
+}

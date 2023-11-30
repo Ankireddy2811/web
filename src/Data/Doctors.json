@@ -16,8 +16,8 @@
       "gender": "Male",
       "date_of_birth": "1975-05-15",
       "hospital_name": "City General Hospital",
-      "language": "English & Hindi",
-      "experince": "5 years",
+      "language": "English &  हिंदी",
+      "experience": "5 years",
       "about": "HeartCare Hospital is a leading cardiac care center."
     },
     {
@@ -36,8 +36,8 @@
       "gender": "Female",
       "date_of_birth": "1980-08-20",
       "hospital_name": "Rural Health Center",
-      "language": "English & Hindi",
-      "experince": "3 years",
+      "language": "English &  हिंदी",
+      "experience": "3 years",
       "about": "KidsHealth Clinic is dedicated to children's health and well-being."
     },
     {
@@ -56,8 +56,8 @@
       "gender": "Female",
       "date_of_birth": "1985-11-25",
       "hospital_name": "Metropolitan Medical Center",
-      "language": "English & Hindi",
-      "experince": "6 years",
+      "language": "English &  हिंदी",
+      "experience": "6 years",
       "about": "SkinCare Clinic provides comprehensive dermatological services."
     },
     {
@@ -76,8 +76,8 @@
       "gender": "Male",
       "date_of_birth": "1978-09-18",
       "hospital_name": "Suburban General Hospital",
-      "language": "English & Hindi",
-      "experince": "2 years",
+      "language": "English &  हिंदी",
+      "experience": "2 years",
       "about": "OrthoCare Hospital specializes in orthopedic and musculoskeletal care."
     },
     {
@@ -96,8 +96,8 @@
       "gender": "Female",
       "date_of_birth": "1982-04-30",
       "hospital_name": "Coastal Community Hospital",
-      "language": "English, & Hindi",
-      "experince": "1 years",
+      "language": "English, &  हिंदी",
+      "experience": "1 years",
       "about": "Women's Health Center provides comprehensive women's healthcare services."
     }
   ]
