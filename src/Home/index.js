@@ -9,20 +9,20 @@ const Home = () => {
       <div className="container">
         <div className="d-flex flex-wrap justify-content-between">
 
-          {/* Left Side Content */}
+          {/* Left Side Content 
           <div>
             <LeftSidebar/>
-          </div>
+          </div> *}
           
           {/* Mian Content */}
           <div>
             <Doctors/>
           </div>
           
-          {/* Right side Content */}
+          {/* Right side Content 
           <div>
             <RightSidebar/>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
