@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DoctorData from "../../Data/Doctors.json";
 import DoctorImg from "../../assets/img/doctor.png";
 import NurseImg  from "../../assets/img/nurse.jpg";
+import AppointmentForm from "../AppointmentForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Spinner from "../Spinner";
@@ -14,21 +15,50 @@ const Doctors = () => {
 
   return (
     <>
+    <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Appointment Form
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <AppointmentForm />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="custom-container">
         <div className="custom-header">
           <span>
             <p>All Doctors ({DoctorCount})</p>
           </span>
           <span>
-            <input
-              type="search"
-              width="200"
-              placeholder="Search Doctor, Diseases"
-              name=""
-              id=""
-              className="custom-search-input"
-            />
-            <FontAwesomeIcon icon={faMagnifyingGlass} className="custom-search-icon" />
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Doctor"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">
+                Search
+              </button>
+            </form>
+            {/* <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
           </span>
         </div>
 
@@ -57,9 +87,15 @@ const Doctors = () => {
                       <button href="#" className="both-buttons profile-button">
                         Full Profile
                       </button>
-                      <button href="#" className="both-buttons appointment-button">
-                        Appointment Book
-                      </button>
+                      
+                      <button
+                            type="button"
+                            className="both-buttons appointment-button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            Appointment Book
+                          </button>
                     </span>
                   </div>
                 </div>
