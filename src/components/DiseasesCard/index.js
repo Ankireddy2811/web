@@ -6,7 +6,7 @@ const DiseasesCard = () => {
   return (
     <div className='diseases-container'>
       <h4 style={{color:"orange"}}>Popular Diseases</h4>
-       <ul className="unordered-list">
+       <ul className="d-flex flex-wrap mx-auto">
        {diseasesCategories.map(eachItem=>(
         <li className="each-list-item">
           <img src={eachItem.imageUrl} alt={eachItem.name} className="image-item"/>

@@ -5,7 +5,8 @@ import "./index.css"
 const TopLists = () => {
   const {cardsList} = cardsData
     return (
-      <ul className="unordered-list">
+      <div className="mt-3 me-4">
+      <ul className="d-flex flex-wrap">
        {cardsList.map(eachItem=>(
         <li className="each-list-item">
           <img src={eachItem.imageUrl} alt={eachItem.name} className="image-item"/>
@@ -13,8 +14,8 @@ const TopLists = () => {
         </li>
        ))}
       </ul>
+      </div>
     )
-  
 };
 
 export default TopLists;
