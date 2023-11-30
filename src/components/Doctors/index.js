@@ -7,12 +7,15 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const Doctors = () => {
   const { doctors } = DoctorData;
 
+  const DoctorCount = doctors.length;
+    // console.log(DoctorCount);
+
   return (
     <>
       <div>
         <div className="d-flex justify-content-between">
           <span>
-            <p>All Doctors (30)</p>
+            <p>All Doctors ({DoctorCount})</p>
           </span>
           <span>
             <input
