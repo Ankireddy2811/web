@@ -1,7 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../../assets/img/Orionqo.png";
 import "./index.css";
-import { faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/img/Orionqo 2.png";
 
 const Header = () => {
