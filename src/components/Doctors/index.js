@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import {BsSearch} from 'react-icons/bs'
 import DoctorData from "../../Data/Doctors.json";
 import DoctorImg from "../../assets/img/doctor.png";
-import NurseImg  from "../../assets/img/nurse.jpg";
+import NurseImg from "../../assets/img/nurse.jpg";
 import AppointmentForm from "../AppointmentForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAward,
+  faGlobe,
+  faLocationDot,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import Spinner from "../Spinner";
-import "./index.css"; 
+import "./index.css";
 
 const Doctors = () => {
   const { doctors } = DoctorData;
@@ -16,7 +21,7 @@ const Doctors = () => {
 
   return (
     <>
-    <div
+      <div
         class="modal fade"
         id="exampleModal"
         tabindex="-1"
@@ -72,30 +77,62 @@ const Doctors = () => {
             ) : (
               doctors.map((eachItem, index) => (
                 <div className="custom-doctor-card" key={index}>
-                  <img src={eachItem.gender === "Male" ? DoctorImg : NurseImg} className="custom-doctor-image" alt="..." />
+                  <img
+                    src={eachItem.gender === "Male" ? DoctorImg : NurseImg}
+                    className="custom-doctor-image"
+                    alt="..."
+                  />
                   <div className="custom-doctor-details">
-                    <h5 className="custom-doctor-title">
+                    <h5 className="text-body-emphasis fw-bold">
                       {eachItem.first_name} {eachItem.last_name}
                     </h5>
-                    <p className="custom-doctor-hospital">{eachItem.hospital_name}</p>
-                    <p className="custom-doctor-specialty">{eachItem.specialty}</p>
-                    <span  className="experience-container">
-                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/award.svg" className="exp-icon"/>
-                    <p className="custom-doctor-experience">Overall {eachItem.experience} experience</p>
+                    <span className="text-danger fw-bold">{eachItem.specialty} </span>
+                    <span className="text-body-secondary">
+                      ({eachItem.qualification})
                     </span>
+                    <div className="mt-1">
+                      <FontAwesomeIcon
+                        icon={faAward}
+                        style={{ color: "#eabd1a" }}
+                      /> <span className="fw-semibold">
+                        {eachItem.experience} experience
+                      </span>
+                    </div>
+
+                    <div className="mt-1">
+                      <FontAwesomeIcon
+                        icon={faLocationDot}
+                        style={{ color: "#213454" }}
+                      />{" "}
+                      <span className="custom-doctor-hospital text-success fw-medium">
+                        {eachItem.hospital_name}
+                      </span>
+                    </div>
+                    <div className="mt-1">
+                       <p>
+                      <span>
+                        <FontAwesomeIcon icon={faGlobe} />
+                        <span className="text-primary">
+                          {" "}
+                          {eachItem.language}
+                        </span>
+                      </span>
+                    </p> 
+                    </div>
+                    
                     <span className="custom-doctor-buttons">
                       <button href="#" className="both-buttons profile-button">
                         Full Profile
                       </button>
-                      
+
                       <button
-                            type="button"
-                            className="both-buttons appointment-button"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                          >
-                            Appointment Book
-                          </button>
+                        type="button"
+                        className="both-buttons appointment-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Appointment Book
+                      </button>
                     </span>
                   </div>
                 </div>

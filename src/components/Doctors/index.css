@@ -123,15 +123,16 @@
   }
 
   .profile-button {
-    border-color: #3498db;
-    background: linear-gradient(to bottom right, #3498db, #2980b9);
+    /* border-color: #3498db;
+    background: linear-gradient(to bottom right, #3498db, #2980b9); */
+    background-color: #004c6a;
     margin-right: 10px;
    }
 
  .appointment-button{
-
-    border-color: #007C9D;
-    background: linear-gradient(to bottom right,#007291,#07394a);
+    /* border-color: #007C9D;
+    background: linear-gradient(to bottom right,#007291,#07394a); */
+    background-color:#0093cc ;
  }
   
 @media (max-width:768px){

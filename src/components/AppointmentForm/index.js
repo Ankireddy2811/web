@@ -13,8 +13,6 @@ const AppointmentForm = () => {
     historyDetails: "",
   });
 
-  const [startDate, setStartDate] = useState(new Date());
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
