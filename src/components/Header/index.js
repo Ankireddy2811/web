@@ -4,17 +4,12 @@ import Logo from "../../assets/img/Orionqo 2.png";
 const Header = () => {
   return (
     <>
-      <section>
-        <div className="">
-          <div id="header-image">
-            <div className="container">
-              <div className="logo-text">
-                <img src={Logo} alt="" width="200" />
-              </div>
-            </div>
-          </div>
+      <div id="header-image">
+        <div className="logo-text">
+          <img src={Logo} alt="" width="200" />
         </div>
-      </section>
+      </div>
+
 
       {/* <section>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">

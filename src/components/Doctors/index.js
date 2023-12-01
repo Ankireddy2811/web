@@ -50,7 +50,7 @@ const Doctors = () => {
       <div className="custom-container">
         <div className="custom-header">
           <span>
-            <p>All Doctors ({DoctorCount})</p>
+            <p className="all-doctors-text">All Doctors ({DoctorCount})</p>
           </span>
           <span>
             <form class="d-flex" role="search">
@@ -83,10 +83,10 @@ const Doctors = () => {
                     alt="..."
                   />
                   <div className="custom-doctor-details">
-                    <h5 className="text-body-emphasis fw-bold">
+                    <h5 className="custom-doctor-title">
                       {eachItem.first_name} {eachItem.last_name}
                     </h5>
-                    <span className="text-danger fw-bold">{eachItem.specialty} </span>
+                    <span className="text-danger fw-bold custom-doctor-specialty">{eachItem.specialty} </span>
                     <span className="text-body-secondary">
                       ({eachItem.qualification})
                     </span>
@@ -104,7 +104,7 @@ const Doctors = () => {
                         icon={faLocationDot}
                         style={{ color: "#213454" }}
                       />{" "}
-                      <span className="custom-doctor-hospital text-success fw-medium">
+                      <span className="text-success fw-medium custom-doctor-hospital">
                         {eachItem.hospital_name}
                       </span>
                     </div>

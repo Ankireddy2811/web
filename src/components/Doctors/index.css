@@ -8,6 +8,7 @@
   
   .custom-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   
@@ -95,6 +96,12 @@
     padding-bottom: 8px;
     padding-right: 16px;
   }
+
+  .all-doctors-text{
+    font-family: "Roboto";
+    font-size: 20px;
+   
+  }
   
   .search-input {
     background-color: #f1f5f9;
@@ -141,9 +148,12 @@
   }
   .custom-doctor-image {
     width: 35%;
-    height: 20vh;
+    height: 15vh;
   }
   .custom-doctor-experience{
+    font-size: 12px;
+  }
+  .custom-doctor-specialty{
     font-size: 12px;
   }
   .both-buttons{
@@ -155,6 +165,10 @@
   }
   .custom-doctor-title{
     font-size: 18px;
+  }
+  .all-doctors-text{
+    font-size: 14px;
+    margin-bottom: 3px;
   }
  
 }
