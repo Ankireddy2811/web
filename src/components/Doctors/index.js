@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {BsSearch} from 'react-icons/bs'
 import DoctorData from "../../Data/Doctors.json";
 import DoctorImg from "../../assets/img/doctor.png";
 import NurseImg  from "../../assets/img/nurse.jpg";
@@ -48,15 +49,14 @@ const Doctors = () => {
           </span>
           <span>
             <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search Doctor"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-dark" type="submit">
-                Search
-              </button>
+              <div className="search-input-container">
+                <input
+                  type="search"
+                  className="search-input"
+                  placeholder="Search"
+                 />
+                <BsSearch className="search-icon" />
+               </div>
             </form>
             {/* <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
           </span>
