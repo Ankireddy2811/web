@@ -1,11 +1,12 @@
 import React from 'react'
 import cardsData from '../../Data/diseasesData.json';
+import "./index.css"
 
 const DiseasesCard = () => {
   const {diseasesCategories} = cardsData;
   return (
     <div className='diseases-container'>
-      <h4 style={{color:"orange"}}>Popular Diseases</h4>
+      <h4 style={{color:"orange"}} className='diseases-text'>Popular Diseases</h4>
        <ul className="d-flex flex-wrap mx-auto">
        {diseasesCategories.map(eachItem=>(
         <li className="each-list-item">

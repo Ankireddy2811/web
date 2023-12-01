@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import {BsSearch} from 'react-icons/bs'
 import DoctorData from "../../Data/Doctors.json";
-import DoctorImg from "../../assets/img/doctor.png";
-import NurseImg from "../../assets/img/nurse.jpg";
 import AppointmentForm from "../AppointmentForm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAward,
-  faGlobe,
-  faLocationDot,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import DoctorsCard from "../DoctorsCard"
 import Spinner from "../Spinner";
 import "./index.css";
 
 const Doctors = () => {
   const { doctors } = DoctorData;
   const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
   const DoctorCount = doctors.length;
+
+  const filteredDoctors = doctors.filter(
+    (doctor) =>
+      doctor.first_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      doctor.last_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      doctor.specialty.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <>
@@ -47,7 +47,7 @@ const Doctors = () => {
           </div>
         </div>
       </div>
-      <div className="custom-container">
+      <div className="custom-container mt-3 me-4">
         <div className="custom-header">
           <span>
             <p className="all-doctors-text">All Doctors ({DoctorCount})</p>
@@ -59,11 +59,13 @@ const Doctors = () => {
                   type="search"
                   className="search-input"
                   placeholder="Search"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
                  />
                 <BsSearch className="search-icon" />
                </div>
             </form>
-            {/* <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
+          
           </span>
         </div>
 
@@ -75,67 +77,8 @@ const Doctors = () => {
             {doctors.length === 0 ? (
               <p className="custom-no-data">NO Data Found</p>
             ) : (
-              doctors.map((eachItem, index) => (
-                <div className="custom-doctor-card" key={index}>
-                  <img
-                    src={eachItem.gender === "Male" ? DoctorImg : NurseImg}
-                    className="custom-doctor-image"
-                    alt="..."
-                  />
-                  <div className="custom-doctor-details">
-                    <h5 className="custom-doctor-title">
-                      {eachItem.first_name} {eachItem.last_name}
-                    </h5>
-                    <span className="text-danger fw-bold custom-doctor-specialty">{eachItem.specialty} </span>
-                    <span className="text-body-secondary">
-                      ({eachItem.qualification})
-                    </span>
-                    <div className="mt-1">
-                      <FontAwesomeIcon
-                        icon={faAward}
-                        style={{ color: "#eabd1a" }}
-                      /> <span className="fw-semibold">
-                        {eachItem.experience} experience
-                      </span>
-                    </div>
-
-                    <div className="mt-1">
-                      <FontAwesomeIcon
-                        icon={faLocationDot}
-                        style={{ color: "#213454" }}
-                      />{" "}
-                      <span className="text-success fw-medium custom-doctor-hospital">
-                        {eachItem.hospital_name}
-                      </span>
-                    </div>
-                    <div className="mt-1">
-                       <p>
-                      <span>
-                        <FontAwesomeIcon icon={faGlobe} />
-                        <span className="text-primary">
-                          {" "}
-                          {eachItem.language}
-                        </span>
-                      </span>
-                    </p> 
-                    </div>
-                    
-                    <span className="custom-doctor-buttons">
-                      <button href="#" className="both-buttons profile-button">
-                        Full Profile
-                      </button>
-
-                      <button
-                        type="button"
-                        className="both-buttons appointment-button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        Appointment Book
-                      </button>
-                    </span>
-                  </div>
-                </div>
+              filteredDoctors.map(eachContent=> (
+               <DoctorsCard key={eachContent.doctor_id} eachItem={eachContent}/>
               ))
             )}
           </div>
