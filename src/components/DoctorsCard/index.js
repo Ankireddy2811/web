@@ -54,7 +54,7 @@ const DoctorsCard = (props) => {
                 </div>
 
                 <span className="custom-doctor-buttons">
-                    <Link to={`/doctor/${eachItem.doctor_id}`} className="both-buttons profile-button">
+                    <Link to={`/doctors/${eachItem.doctor_id}`} className="both-buttons profile-button">
                         Full Profile
                     </Link>
 
