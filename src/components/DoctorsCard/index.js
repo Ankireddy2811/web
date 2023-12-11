@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import DoctorImg from "../../assets/img/doctor.png";
-import NurseImg from "../../assets/img/nurse.jpg";
+import NurseImg from "../../assets/img/nurse.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faGlobe, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./index.css"

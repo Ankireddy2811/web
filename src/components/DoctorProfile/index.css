@@ -1,5 +1,16 @@
 /* index.css */
 
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #99b3e7d4;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right bottom, rgb(155, 157, 158rgb(143, 145, 146)23)); */
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right bottom, rgb(173, 173, 173), rgb(202, 202, 202)) */
+  }
+
 .doctor-profile {
   display: flex;
   flex-direction: row;
