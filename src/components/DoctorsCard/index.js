@@ -11,26 +11,26 @@ const DoctorsCard = (props) => {
     return (
        <div className="custom-doctor-card">
             <img
-                src={eachItem.gender === "Male" ? DoctorImg : NurseImg}
+                src={eachItem.gender === "male" ? DoctorImg : NurseImg}
                 className="custom-doctor-image"
                 alt="..."
             />
             <div className="custom-doctor-details">
                 <h5 className="custom-doctor-title">
-                    {eachItem.first_name} {eachItem.last_name}
+                    {eachItem.firstName} {eachItem.lastName}
                 </h5>
                 <span className="text-danger fw-bold custom-doctor-specialty">{eachItem.specialty} </span>
                 <span className="text-body-secondary">
-                    ({eachItem.qualification})
+                    ({eachItem.qualifications})
                 </span>
-                <div className="mt-1">
+              {/*  <div className="mt-1">
                     <FontAwesomeIcon
                         icon={faAward}
                         style={{ color: "#eabd1a" }}
                     /> <span className="fw-semibold">
-                        {eachItem.experience} experience
+                        {eachItem.experience} 
                     </span>
-                </div>
+                </div> */}
 
                 <div className="mt-1">
                     <FontAwesomeIcon
@@ -38,20 +38,20 @@ const DoctorsCard = (props) => {
                         style={{ color: "#213454" }}
                     />{" "}
                     <span className="text-success fw-medium custom-doctor-hospital">
-                        {eachItem.hospital_name}
+                        {eachItem.address}
                     </span>
                 </div>
-                <div className="mt-1">
+               <div className="mt-1">
                     <p>
                         <span>
-                            <FontAwesomeIcon icon={faGlobe} />
+                        <FontAwesomeIcon icon="fa-regular fa-phone" />
                             <span className="text-primary">
                                 {" "}
-                                {eachItem.language}
+                                {eachItem.contactNumber}
                             </span>
                         </span>
                     </p>
-                </div>
+              </div> 
 
                 <span className="custom-doctor-buttons">
                     <Link to={`/doctors/${eachItem.doctor_id}`} className="both-buttons profile-button">
