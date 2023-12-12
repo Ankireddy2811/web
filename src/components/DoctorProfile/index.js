@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DoctorImg from "../../assets/img/doctor.png";
-
 import NurseImg from "../../assets/img/nurse.png";
 //import DoctorData from "../../Data/Doctors.json";
 

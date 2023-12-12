@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import DoctorImg from "../../assets/img/doctor.png";
 import NurseImg from "../../assets/img/nurse.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAward, faGlobe, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faGlobe, faLocationDot,faPhone} from "@fortawesome/free-solid-svg-icons";
 import "./index.css"
 
 
@@ -44,7 +44,7 @@ const DoctorsCard = (props) => {
                <div className="mt-1">
                     <p>
                         <span>
-                        <FontAwesomeIcon icon="fa-regular fa-phone" />
+                        <FontAwesomeIcon icon={faPhone} />
                             <span className="text-primary">
                                 {" "}
                                 {eachItem.contactNumber}
@@ -54,7 +54,7 @@ const DoctorsCard = (props) => {
               </div> 
 
                 <span className="custom-doctor-buttons">
-                    <Link to={`/doctor/${eachItem.doctor_id}`} className="both-buttons profile-button">
+                    <Link to={`/doctors/${eachItem.doctor_id}`} className="both-buttons profile-button">
                         Full Profile
                     </Link>
 

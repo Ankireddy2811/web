@@ -3,7 +3,7 @@ import {BsSearch} from 'react-icons/bs'
 import AppointmentForm from "../AppointmentForm";
 import DoctorsCard from "../DoctorsCard"
 import axios from "axios";
-import Spinner from "../Spinner";
+//import Spinner from "../Spinner";
 import "./index.css";
 
 const Doctors = () => {
@@ -61,12 +61,12 @@ const Doctors = () => {
   }, []);
   
 
-  // const filteredDoctors = doctorsData.filter(
-  //   (doctor) =>
-  //     doctor.first_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //     doctor.last_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //     doctor.specialty.toLowerCase().includes(searchTerm.toLowerCase())
-  // );
+  const filteredDoctors = doctorsData.filter(
+    (doctor) =>
+      doctor.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      doctor.lastName.toLowerCase().includes(searchTerm.toLowerCase()) 
+      
+  );
 
   const renderFailureView = () => (
     <div className="no-products-view">
@@ -148,7 +148,7 @@ const Doctors = () => {
               </p>
             </div>
             ) : (
-              doctorsData.map(eachContent=> (
+              filteredDoctors.map(eachContent=> (
                <DoctorsCard key={eachContent.doctor_id} eachItem={eachContent}/>
               ))
             )}
