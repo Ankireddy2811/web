@@ -1,9 +1,12 @@
 // DoctorProfile.js
 
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import DoctorImg from "../../assets/img/doctor.png";
+
 import NurseImg from "../../assets/img/nurse.png";
-import DoctorData from "../../Data/Doctors.json";
+//import DoctorData from "../../Data/Doctors.json";
+
 import "./index.css";
 import { Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,15 +18,47 @@ const DoctorProfile = (props) => {
   const [DoctorProfile, setDoctorProfile] = useState({});
 
   useEffect(() => {
+    const fetchData = async () => {
     const { match } = props;
-    const { doctors } = DoctorData;
-    const filteredDoctorProfile = doctors.filter(
-      (eachItem) => eachItem.doctor_id == match.params.id
-    );
-    setDoctorProfile(filteredDoctorProfile[0]);
+    const access = JSON.parse(localStorage.getItem("access_token"));
+    const id = JSON.parse(localStorage.getItem("client_id"));
+    console.log(match.params.id);
+    const headersPart = {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${access}`,
+      },
+    };
+    const formData = {
+      doctor_id:match.params.id,
+      client_id:id
+
+    }
+
+    try {
+      const response = await axios.post("https://www.iyrajewels.com/api/doctor/details-By",formData,headersPart);
+      const data = await response.data;
+      const {Data} = data 
+      const specificData = {
+        firstName:Data[0].first_name,
+        lastName:Data[0].last_name,
+        address:Data[0].address,
+        email:Data[0].email,
+        gender:Data[0].gender,
+        specialty: Data[0].specialty,
+        qualifications: Data[0].qualifications,
+        department:Data[0].department
+      }
+      setDoctorProfile(specificData);
+    } catch (error) {
+      throw new Error(error);
+    }
+  
+  }
+  fetchData();
   }, [props.match.params.id]);
 
-  return (
+ return (
     <>
       <section className="">
         <div className="container py-5 h-100">
@@ -35,13 +70,13 @@ const DoctorProfile = (props) => {
                     <img
                       className="img-fluid my-3"
                       src={
-                        DoctorProfile.gender === "Male" ? DoctorImg : NurseImg
+                        DoctorProfile.gender === "male" ? DoctorImg : NurseImg
                       }
-                      alt={`${DoctorProfile.first_name} ${DoctorProfile.last_name}`}
+                      alt={`${DoctorProfile.firstName} ${DoctorProfile.lastName}`}
                     />
                     <span>
-                      <h5>{`${DoctorProfile.first_name} ${DoctorProfile.last_name}`}</h5>
-                      <FontAwesomeIcon icon={faGraduationCap} /> ({DoctorProfile.qualification})
+                      <h5>{`${DoctorProfile.firstName} ${DoctorProfile.lastName}`}</h5>
+                      <FontAwesomeIcon icon={faGraduationCap} /> ({DoctorProfile.qualifications})
                     </span>
                     <div className="mt-3">
                       <button
@@ -57,10 +92,10 @@ const DoctorProfile = (props) => {
                   <div className="col-md-8">
                     <div className="card-body p-4 ">
                       <h6 className="mb-3">
-                        {DoctorProfile.specialty} | {DoctorProfile.experience}
+                        {DoctorProfile.specialty}
                       </h6>
-                      <hr className="mt-0 mb-2" />
-                      <div className="row pt-1">
+                    
+                     {/* <div className="row pt-1">
                         <div className="mb-4">
                           <h6>
                             Registration Number{" "}</h6>
@@ -68,23 +103,23 @@ const DoctorProfile = (props) => {
                             <FontAwesomeIcon icon={faIdCard} /> : {DoctorProfile.registration_number}
                             </span>{" "}
                         </div>
-                      </div>
+                    </div> */}
                       <h6><FontAwesomeIcon
                         icon={faLocationDot}
                         style={{ color: "#213454" }}
-                    /> {DoctorProfile.hospital_name}</h6>
-                      <hr className="mt-0 mb-4" />
-                      <div className="row pt-1">
+                    /> {DoctorProfile.address}</h6>
+                      
+                      {/* <div className="row pt-1">
                         <div className="mb-3">
                           <h6><FontAwesomeIcon icon={faGlobe} /> Language</h6>
                           <p className="text-muted"> {DoctorProfile.language}</p>
-                        </div>
-                      </div>
+                        </div> 
+                  </div> */}
 
-                      <div className="row">
+                      {/* <div className="row">
                          <h6>about</h6>
                          <p className="text-muted">{DoctorProfile.about}</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -126,47 +161,3 @@ const DoctorProfile = (props) => {
 
 export default DoctorProfile;
 
-/**
- 
-   <div className="doctor-profile">
-        <div className="profile-header">
-          <img
-            src={DoctorProfile.gender === "Male" ? DoctorImg : NurseImg}
-            alt={`${DoctorProfile.first_name} ${DoctorProfile.last_name}`}
-          />
-          <h2>{`${DoctorProfile.first_name} ${DoctorProfile.last_name}`}</h2>
-          <p className="">Specialty: {DoctorProfile.specialty}</p>
-        </div>
-        <div className="profile-details">
-          <p className=" email">Email: {DoctorProfile.email}</p>
-          <p className=" contact">Contact: {DoctorProfile.contact}</p>
-          <p className="qualification">
-            Qualification: {DoctorProfile.qualification}
-          </p>
-          <p className=" address">Address: {DoctorProfile.address}</p>
-          <p className=" department">
-            Department: {DoctorProfile.department_name}
-          </p>
-          <p className=" reg-number">
-            Registration Number: {DoctorProfile.registration_number}
-          </p>
-          <p className=" gender">Gender: {DoctorProfile.gender}</p>
-          <p className=" dob">Date of Birth: {DoctorProfile.date_of_birth}</p>
-          <p className=" hospital">
-            Hospital Name: {DoctorProfile.hospital_name}
-          </p>
-          <p className="language">Language: {DoctorProfile.language}</p>
-          <p className=" experience">Experience: {DoctorProfile.experience}</p>
-          <p className=" registration_number">
-            registration_number: {DoctorProfile.registration_number}
-          </p>
-          <p className=" date_of_birth">
-            Date Of Birth: {DoctorProfile.date_of_birth}
-          </p>
-          <p className=" hospital_name">
-            hospital Name: {DoctorProfile.hospital_name}
-          </p>
-          <p className=" about">About: {DoctorProfile.about}</p>
-        </div>
-      </div>
- */

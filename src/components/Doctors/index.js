@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from "react";
 import {BsSearch} from 'react-icons/bs'
-import DoctorData from "../../Data/Doctors.json";
 import AppointmentForm from "../AppointmentForm";
 import DoctorsCard from "../DoctorsCard"
 import axios from "axios";
