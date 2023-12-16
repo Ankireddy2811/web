@@ -7,14 +7,15 @@ import NurseImg from "../../assets/img/nurse.png";
 //import DoctorData from "../../Data/Doctors.json";
 
 import "./index.css";
-import { Button, Card } from "react-bootstrap";
+//import { Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faGraduationCap, faIdCard, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import AppointmentForm from "../AppointmentForm";
 
 
 const DoctorProfile = (props) => {
   const [DoctorProfile, setDoctorProfile] = useState({});
+  const [loading,setLoading] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,7 +47,9 @@ const DoctorProfile = (props) => {
         gender:Data[0].gender,
         specialty: Data[0].specialty,
         qualifications: Data[0].qualifications,
-        department:Data[0].department
+        department:Data[0].department,
+        contactNumber:Data[0].contact_number,
+        dateOfBirth: Data[0].date_of_birth,
       }
       setDoctorProfile(specificData);
     } catch (error) {
@@ -65,7 +68,7 @@ const DoctorProfile = (props) => {
             <div className="col col-lg-6 mb-4 mb-lg-0">
               <div className="card mb-3">
                 <div className="row g-0">
-                  <div className="col-md-4 gradient-custom text-center text-white">
+                  <div className="col-md-4 gradient-custom text-center text-white pb-2">
                     <img
                       className="img-fluid my-3"
                       src={
@@ -77,16 +80,7 @@ const DoctorProfile = (props) => {
                       <h5>{`${DoctorProfile.firstName} ${DoctorProfile.lastName}`}</h5>
                       <FontAwesomeIcon icon={faGraduationCap} /> ({DoctorProfile.qualifications})
                     </span>
-                    <div className="mt-3">
-                      <button
-                        type="button"
-                        className="both-buttons appointment-button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        Appointment Book
-                      </button>
-                    </div>
+                 
                   </div>
                   <div className="col-md-8">
                     <div className="card-body p-4 ">
@@ -108,17 +102,36 @@ const DoctorProfile = (props) => {
                         style={{ color: "#213454" }}
                     /> {DoctorProfile.address}</h6>
                       
-                      {/* <div className="row pt-1">
-                        <div className="mb-3">
-                          <h6><FontAwesomeIcon icon={faGlobe} /> Language</h6>
-                          <p className="text-muted"> {DoctorProfile.language}</p>
+                      <div className="row pt-1">
+                        <div className="mb-1">
+                          <h6  className="text-muted">Date of Birth: {DoctorProfile.dateOfBirth}</h6>
+                        
                         </div> 
-                  </div> */}
+                      </div> 
+                      <div className="row pt-1">
+                        <div className="mb-1">
+                          <h6  className="text-muted">Email: {DoctorProfile.email}</h6>
+                        
+                        </div> 
+                      </div> 
 
-                      {/* <div className="row">
-                         <h6>about</h6>
-                         <p className="text-muted">{DoctorProfile.about}</p>
-                      </div> */}
+                      <div className="row pt-1">
+                        <div className="mb-1">
+                          <h6  className="text-muted">Contact Number: {DoctorProfile.contactNumber}</h6>
+                        
+                        </div> 
+                      </div> 
+
+                      <div className="mt-3">
+                      <button
+                        type="button"
+                        className="both-buttons appointment-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Appointment Book
+                      </button>
+                    </div>
                     </div>
                   </div>
                 </div>
