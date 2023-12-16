@@ -18,7 +18,7 @@ const Doctors = () => {
     const fetchData = async () => {
       try {
         // Make the API call using axios
-        const response = await axios("https://www.iyrajewels.com/api/doctor/list");
+        const response = await axios.get("https://www.iyrajewels.com/api/doctor/list");
         
         // Log the entire response
         console.log(response);

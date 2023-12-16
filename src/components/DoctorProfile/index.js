@@ -20,13 +20,12 @@ const DoctorProfile = (props) => {
   useEffect(() => {
     const fetchData = async () => {
     const { match } = props;
-    const access = JSON.parse(localStorage.getItem("access_token"));
-    // const id = JSON.parse(localStorage.getItem("client_id"));
+   
     console.log(match.params.id);
     const headersPart = {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${access}`,
+         Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzNTI2NjI5LCJpYXQiOjE3MDE3OTg2MjksImp0aSI6IjQzMDBhYWFlNmE1YzRiM2M4ODI3ODYyMmM2MjI2ZTM2IiwiY2xpZW50X2lkIjoiSElEMDAwMDEifQ.fygOVusWrVFuWRLunV7GBWi8XfdKbgMc31T9C9ucukY `,
       },
     };
     const formData = {
