@@ -21,7 +21,7 @@ const DoctorProfile = (props) => {
     const fetchData = async () => {
     const { match } = props;
     const access = JSON.parse(localStorage.getItem("access_token"));
-    const id = JSON.parse(localStorage.getItem("client_id"));
+    // const id = JSON.parse(localStorage.getItem("client_id"));
     console.log(match.params.id);
     const headersPart = {
       headers: {
@@ -31,7 +31,7 @@ const DoctorProfile = (props) => {
     };
     const formData = {
       doctor_id:match.params.id,
-      client_id:id
+      client_id:'HID00004'
 
     }
 
